@@ -59,19 +59,11 @@ CHIP ALU {
 
     // process no
     Not16(in = out1, out = nout1);
-    Mux16(a = out1, b = nout1, sel = no, out[0..7] = out2, out[8..14] = out3, out[15] = outmsb);
-
-    // :TODO maybe make it better 
-    // out
-    Or16(a[0..7] = out2, a[8..14] = out3, a[15] = outmsb, b = false, out = out);
+    Mux16(a = out1, b = nout1, sel = no, out = out, out[0..7] = out2, out[8..15] = out3, out[15] = ng);
 
     // zr
     Or8Way(in = out2, out = or1);
-    Or8Way(in[0..6] = out3, in[7] = outmsb, out = or2);
+    Or8Way(in = out3, out = or2);
     Or(a = or1, b = or2, out = orout);
-    Mux(a = true, b = false, sel = orout, out = zr);
-
-    // ng
-    Mux(a = false, b = true, sel = outmsb, out = ng);
-
+    Not(in = orout, out = zr);
 }
