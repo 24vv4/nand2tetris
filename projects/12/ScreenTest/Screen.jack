@@ -1,0 +1,90 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Screen.jack
+
+/**
+ * A library of functions for displaying graphics on the screen.
+ * The Hack physical screen consists of 256 rows (indexed 0..255, top to bottom)
+ * of 512 pixels each (indexed 0..511, left to right). The top left pixel on 
+ * the screen is indexed (0,0).
+ */
+class Screen {
+    var boolean color;
+    var Array screen;
+
+
+    /** Initializes the Screen. */
+    function void init() {
+        let screen = 16384;
+        let color = true;
+    }
+
+    /** Erases the entire screen. */
+    function void clearScreen() {
+        var int x;
+        var int y;
+        let x = 0;
+        let y = 0;
+        while(x < 256) {
+            while(y < 64) {
+                screen[x * 32 + y] = 0;
+                let y = y + 1;
+            }
+            let x = x + 1;
+            let y = 0;
+        }
+        return;
+    }
+
+    /** Sets the current color, to be used for all subsequent drawXXX commands.
+     *  Black is represented by true, white by false. */
+    function void setColor(boolean b) {
+        let color = b;
+        return;
+    }
+
+    /** Draws the (x,y) pixel, using the current color. */
+    function void drawPixel(int x, int y) {
+        var int address;
+        var int bit;
+        var int q;
+        let bit = 1;
+        let q = y - (y / 16 * 16);
+        while(q > 0) {
+            let bit = bit * 2;
+            let q = q - 1;
+        }
+        let address = (x * 32) + (y / 16);
+        if(color) {
+            let screen[address] = screen[address] | bit;
+        } else {
+            let screen[address] = screen[address] & (~bit);
+        }
+        return;
+    }
+
+    /** Draws a line from pixel (x1,y1) to pixel (x2,y2), using the current color. */
+    function void drawLine(int x1, int y1, int x2, int y2) {
+        var int adyMinusbdx;
+        var int dx;
+        var int dy;
+        let dx = x2 - x1;
+        let dy = y2 - y1;
+        // TODO: lazy...
+    }
+
+    /** Draws a filled rectangle whose top left corner is (x1, y1)
+     * and bottom right corner is (x2,y2), using the current color. */
+    function void drawRectangle(int x1, int y1, int x2, int y2) {
+        while(x1 < x2) {
+            do drawHorizontal(y1, y2, x1);
+            let x1 = x1 + 1;
+        }
+        return;
+    }
+
+    /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
+    function void drawCircle(int x, int y, int r) {
+    }
+}
