@@ -1,0 +1,110 @@
+<tokens>
+<keyword> class </keyword>
+<identifier 1 static > Main </identifier>
+<symbol> { </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > main </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<identifier 1 static > Array </identifier>
+<identifier 1 static > a </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > length </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > i </identifier>
+<symbol> , </symbol>
+<identifier 1 static > sum </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > length </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Keyboard </identifier>
+<symbol> . </symbol>
+<identifier 1 static > readInt </identifier>
+<symbol> ( </symbol>
+<stringConstant> How many numbers?  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Array </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > length </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > i </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > i </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > length </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > i </identifier>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<identifier 1 static > Keyboard </identifier>
+<symbol> . </symbol>
+<identifier 1 static > readInt </identifier>
+<symbol> ( </symbol>
+<stringConstant> Enter a number:  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > sum </identifier>
+<symbol> = </symbol>
+<identifier 1 static > sum </identifier>
+<symbol> + </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > i </identifier>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > i </identifier>
+<symbol> = </symbol>
+<identifier 1 static > i </identifier>
+<symbol> + </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> The average is  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > sum </identifier>
+<symbol> / </symbol>
+<identifier 1 static > length </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+</tokens>
