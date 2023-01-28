@@ -1,0 +1,84 @@
+<class>
+<keyword> class </keyword>
+<identifier 1 static > Square </identifier>
+<symbol> { </symbol>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 field > x </identifier>
+<symbol> , </symbol>
+<identifier 1 field > y </identifier>
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 field > size </identifier>
+<symbol> ; </symbol>
+</classVarDec>
+<subroutineDec>
+<keyword> constructor </keyword>
+<identifier 1 static > Square </identifier>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier 1 arg > Ax </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 arg > Ay </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 arg > Asize </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier 0 var > x </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier 0 var > Ax </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier 0 var > y </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier 0 var > Ay </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier 0 var > size </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier 0 var > Asize </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier 1 static > draw </identifier>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<keyword> this </keyword>

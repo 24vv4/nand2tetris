@@ -1,0 +1,614 @@
+<tokens>
+<keyword> class </keyword>
+<identifier 1 static > PongGame </identifier>
+<symbol> { </symbol>
+<keyword> static </keyword>
+<identifier 1 static > PongGame </identifier>
+<identifier 1 static > instance </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<identifier 1 static > Bat </identifier>
+<identifier 1 static > bat </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<identifier 1 static > Ball </identifier>
+<identifier 1 static > ball </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> boolean </keyword>
+<identifier 1 static > exit </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > score </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > lastWall </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > batWidth </identifier>
+<symbol> ; </symbol>
+<keyword> constructor </keyword>
+<identifier 1 static > PongGame </identifier>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Screen </identifier>
+<symbol> . </symbol>
+<identifier 1 static > clearScreen </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > batWidth </identifier>
+<symbol> = </symbol>
+<integerConstant> 50 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<integerConstant> 230 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 229 </integerConstant>
+<symbol> , </symbol>
+<identifier 1 static > batWidth </identifier>
+<symbol> , </symbol>
+<integerConstant> 7 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > ball </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<integerConstant> 253 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 222 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 511 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 229 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > setDestination </identifier>
+<symbol> ( </symbol>
+<integerConstant> 400 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Screen </identifier>
+<symbol> . </symbol>
+<identifier 1 static > drawRectangle </identifier>
+<symbol> ( </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 238 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 511 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 240 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > moveCursor </identifier>
+<symbol> ( </symbol>
+<integerConstant> 22 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Score: 0 </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > exit </identifier>
+<symbol> = </symbol>
+<keyword> false </keyword>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > score </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > lastWall </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<keyword> this </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Memory </identifier>
+<symbol> . </symbol>
+<identifier 1 static > deAlloc </identifier>
+<symbol> ( </symbol>
+<keyword> this </keyword>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > newInstance </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > instance </identifier>
+<symbol> = </symbol>
+<identifier 1 static > PongGame </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<identifier 1 static > PongGame </identifier>
+<identifier 1 static > getInstance </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> return </keyword>
+<identifier 1 static > instance </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > run </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> char </keyword>
+<identifier 1 static > key </identifier>
+<symbol> ; </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<identifier 1 static > exit </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> &amp; </symbol>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<identifier 1 static > exit </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Keyboard </identifier>
+<symbol> . </symbol>
+<identifier 1 static > keyPressed </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > move </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > moveBall </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Sys </identifier>
+<symbol> . </symbol>
+<identifier 1 static > wait </identifier>
+<symbol> ( </symbol>
+<integerConstant> 50 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<integerConstant> 130 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > setDirection </identifier>
+<symbol> ( </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<integerConstant> 132 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > setDirection </identifier>
+<symbol> ( </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<integerConstant> 140 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > exit </identifier>
+<symbol> = </symbol>
+<keyword> true </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> &amp; </symbol>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<identifier 1 static > exit </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > key </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Keyboard </identifier>
+<symbol> . </symbol>
+<identifier 1 static > keyPressed </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > move </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > moveBall </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Sys </identifier>
+<symbol> . </symbol>
+<identifier 1 static > wait </identifier>
+<symbol> ( </symbol>
+<integerConstant> 50 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > exit </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > moveCursor </identifier>
+<symbol> ( </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 27 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Game Over </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > moveBall </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> , </symbol>
+<identifier 1 static > batLeft </identifier>
+<symbol> , </symbol>
+<identifier 1 static > batRight </identifier>
+<symbol> , </symbol>
+<identifier 1 static > ballLeft </identifier>
+<symbol> , </symbol>
+<identifier 1 static > ballRight </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > move </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> &gt; </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> &amp; </symbol>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > lastWall </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > lastWall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > batLeft </identifier>
+<symbol> = </symbol>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > getLeft </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > batRight </identifier>
+<symbol> = </symbol>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > getRight </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > ballLeft </identifier>
+<symbol> = </symbol>
+<identifier 1 static > ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > getLeft </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > ballRight </identifier>
+<symbol> = </symbol>
+<identifier 1 static > ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > getRight </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > exit </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > batLeft </identifier>
+<symbol> &gt; </symbol>
+<identifier 1 static > ballRight </identifier>
+<symbol> ) </symbol>
+<symbol> | </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > batRight </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > ballLeft </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<identifier 1 static > exit </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > ballRight </identifier>
+<symbol> &lt; </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > batLeft </identifier>
+<symbol> + </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> = </symbol>
+<symbol> - </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > ballLeft </identifier>
+<symbol> &gt; </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > batRight </identifier>
+<symbol> - </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> = </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> let </keyword>
+<identifier 1 static > batWidth </identifier>
+<symbol> = </symbol>
+<identifier 1 static > batWidth </identifier>
+<symbol> - </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > bat </identifier>
+<symbol> . </symbol>
+<identifier 1 static > setWidth </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > batWidth </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > score </identifier>
+<symbol> = </symbol>
+<identifier 1 static > score </identifier>
+<symbol> + </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > moveCursor </identifier>
+<symbol> ( </symbol>
+<integerConstant> 22 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 7 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > score </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> do </keyword>
+<identifier 1 static > ball </identifier>
+<symbol> . </symbol>
+<identifier 1 static > bounce </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+</tokens>

@@ -1,0 +1,237 @@
+<tokens>
+<keyword> class </keyword>
+<identifier 1 static > Main </identifier>
+<symbol> { </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > main </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > value </identifier>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Main </identifier>
+<symbol> . </symbol>
+<identifier 1 static > fillMemory </identifier>
+<symbol> ( </symbol>
+<integerConstant> 8001 </integerConstant>
+<symbol> , </symbol>
+<integerConstant> 16 </integerConstant>
+<symbol> , </symbol>
+<symbol> - </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > value </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Memory </identifier>
+<symbol> . </symbol>
+<identifier 1 static > peek </identifier>
+<symbol> ( </symbol>
+<integerConstant> 8000 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Main </identifier>
+<symbol> . </symbol>
+<identifier 1 static > convert </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > value </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > convert </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > value </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > mask </identifier>
+<symbol> , </symbol>
+<identifier 1 static > position </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> boolean </keyword>
+<identifier 1 static > loop </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > loop </identifier>
+<symbol> = </symbol>
+<keyword> true </keyword>
+<symbol> ; </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > loop </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > position </identifier>
+<symbol> = </symbol>
+<identifier 1 static > position </identifier>
+<symbol> + </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > mask </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Main </identifier>
+<symbol> . </symbol>
+<identifier 1 static > nextMask </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > mask </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > position </identifier>
+<symbol> &gt; </symbol>
+<integerConstant> 16 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > value </identifier>
+<symbol> &amp; </symbol>
+<identifier 1 static > mask </identifier>
+<symbol> ) </symbol>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Memory </identifier>
+<symbol> . </symbol>
+<identifier 1 static > poke </identifier>
+<symbol> ( </symbol>
+<integerConstant> 8000 </integerConstant>
+<symbol> + </symbol>
+<identifier 1 static > position </identifier>
+<symbol> , </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Memory </identifier>
+<symbol> . </symbol>
+<identifier 1 static > poke </identifier>
+<symbol> ( </symbol>
+<integerConstant> 8000 </integerConstant>
+<symbol> + </symbol>
+<identifier 1 static > position </identifier>
+<symbol> , </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > loop </identifier>
+<symbol> = </symbol>
+<keyword> false </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<keyword> int </keyword>
+<identifier 1 static > nextMask </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > mask </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > mask </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> return </keyword>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> return </keyword>
+<identifier 1 static > mask </identifier>
+<symbol> * </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > fillMemory </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > startAddress </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > length </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > value </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > length </identifier>
+<symbol> &gt; </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Memory </identifier>
+<symbol> . </symbol>
+<identifier 1 static > poke </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > startAddress </identifier>
+<symbol> , </symbol>
+<identifier 1 static > value </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > length </identifier>
+<symbol> = </symbol>
+<identifier 1 static > length </identifier>
+<symbol> - </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > startAddress </identifier>
+<symbol> = </symbol>
+<identifier 1 static > startAddress </identifier>
+<symbol> + </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+</tokens>

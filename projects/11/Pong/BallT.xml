@@ -1,0 +1,881 @@
+<tokens>
+<keyword> class </keyword>
+<identifier 1 static > Ball </identifier>
+<symbol> { </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > x </identifier>
+<symbol> , </symbol>
+<identifier 1 static > y </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > lengthx </identifier>
+<symbol> , </symbol>
+<identifier 1 static > lengthy </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > d </identifier>
+<symbol> , </symbol>
+<identifier 1 static > straightD </identifier>
+<symbol> , </symbol>
+<identifier 1 static > diagonalD </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> boolean </keyword>
+<identifier 1 static > invert </identifier>
+<symbol> , </symbol>
+<identifier 1 static > positivex </identifier>
+<symbol> , </symbol>
+<identifier 1 static > positivey </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > leftWall </identifier>
+<symbol> , </symbol>
+<identifier 1 static > rightWall </identifier>
+<symbol> , </symbol>
+<identifier 1 static > topWall </identifier>
+<symbol> , </symbol>
+<identifier 1 static > bottomWall </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> ; </symbol>
+<keyword> constructor </keyword>
+<identifier 1 static > Ball </identifier>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > Ax </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > Ay </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > AleftWall </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > ArightWall </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > AtopWall </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > AbottomWall </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Ax </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Ay </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > leftWall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > AleftWall </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > rightWall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > ArightWall </identifier>
+<symbol> - </symbol>
+<integerConstant> 6 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > topWall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > AtopWall </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > bottomWall </identifier>
+<symbol> = </symbol>
+<identifier 1 static > AbottomWall </identifier>
+<symbol> - </symbol>
+<integerConstant> 6 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > show </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<keyword> this </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Memory </identifier>
+<symbol> . </symbol>
+<identifier 1 static > deAlloc </identifier>
+<symbol> ( </symbol>
+<keyword> this </keyword>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > show </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Screen </identifier>
+<symbol> . </symbol>
+<identifier 1 static > setColor </identifier>
+<symbol> ( </symbol>
+<keyword> true </keyword>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > draw </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > hide </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Screen </identifier>
+<symbol> . </symbol>
+<identifier 1 static > setColor </identifier>
+<symbol> ( </symbol>
+<keyword> false </keyword>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > draw </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > draw </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Screen </identifier>
+<symbol> . </symbol>
+<identifier 1 static > drawRectangle </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > x </identifier>
+<symbol> , </symbol>
+<identifier 1 static > y </identifier>
+<symbol> , </symbol>
+<identifier 1 static > x </identifier>
+<symbol> + </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> , </symbol>
+<identifier 1 static > y </identifier>
+<symbol> + </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier 1 static > getLeft </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> return </keyword>
+<identifier 1 static > x </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier 1 static > getRight </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> return </keyword>
+<identifier 1 static > x </identifier>
+<symbol> + </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > setDestination </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > destx </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > desty </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > dx </identifier>
+<symbol> , </symbol>
+<identifier 1 static > dy </identifier>
+<symbol> , </symbol>
+<identifier 1 static > temp </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > lengthx </identifier>
+<symbol> = </symbol>
+<identifier 1 static > destx </identifier>
+<symbol> - </symbol>
+<identifier 1 static > x </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > lengthy </identifier>
+<symbol> = </symbol>
+<identifier 1 static > desty </identifier>
+<symbol> - </symbol>
+<identifier 1 static > y </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > dx </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Math </identifier>
+<symbol> . </symbol>
+<identifier 1 static > abs </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > lengthx </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > dy </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Math </identifier>
+<symbol> . </symbol>
+<identifier 1 static > abs </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > lengthy </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > invert </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > dx </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > dy </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > invert </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > temp </identifier>
+<symbol> = </symbol>
+<identifier 1 static > dx </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > dx </identifier>
+<symbol> = </symbol>
+<identifier 1 static > dy </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > dy </identifier>
+<symbol> = </symbol>
+<identifier 1 static > temp </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > positivex </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > y </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > desty </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > positivey </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > x </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > destx </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > positivex </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > x </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > destx </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > positivey </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > y </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > desty </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> let </keyword>
+<identifier 1 static > d </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> * </symbol>
+<identifier 1 static > dy </identifier>
+<symbol> ) </symbol>
+<symbol> - </symbol>
+<identifier 1 static > dx </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > straightD </identifier>
+<symbol> = </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> * </symbol>
+<identifier 1 static > dy </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > diagonalD </identifier>
+<symbol> = </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> * </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > dy </identifier>
+<symbol> - </symbol>
+<identifier 1 static > dx </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier 1 static > move </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > hide </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > d </identifier>
+<symbol> &lt; </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > d </identifier>
+<symbol> = </symbol>
+<identifier 1 static > d </identifier>
+<symbol> + </symbol>
+<identifier 1 static > straightD </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > d </identifier>
+<symbol> = </symbol>
+<identifier 1 static > d </identifier>
+<symbol> + </symbol>
+<identifier 1 static > diagonalD </identifier>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > positivey </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > invert </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > x </identifier>
+<symbol> + </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > y </identifier>
+<symbol> + </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > invert </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > x </identifier>
+<symbol> - </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > y </identifier>
+<symbol> - </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > positivex </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > invert </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > y </identifier>
+<symbol> + </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > x </identifier>
+<symbol> + </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > invert </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > y </identifier>
+<symbol> - </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > x </identifier>
+<symbol> - </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > x </identifier>
+<symbol> &gt; </symbol>
+<identifier 1 static > leftWall </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > leftWall </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > x </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > rightWall </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > x </identifier>
+<symbol> = </symbol>
+<identifier 1 static > rightWall </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > y </identifier>
+<symbol> &gt; </symbol>
+<identifier 1 static > topWall </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > topWall </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > y </identifier>
+<symbol> &lt; </symbol>
+<identifier 1 static > bottomWall </identifier>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > y </identifier>
+<symbol> = </symbol>
+<identifier 1 static > bottomWall </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> do </keyword>
+<identifier 1 static > show </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<identifier 1 static > wall </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier 1 static > bounce </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> , </symbol>
+<identifier 1 static > newy </identifier>
+<symbol> , </symbol>
+<identifier 1 static > divLengthx </identifier>
+<symbol> , </symbol>
+<identifier 1 static > divLengthy </identifier>
+<symbol> , </symbol>
+<identifier 1 static > factor </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > divLengthx </identifier>
+<symbol> = </symbol>
+<identifier 1 static > lengthx </identifier>
+<symbol> / </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > divLengthy </identifier>
+<symbol> = </symbol>
+<identifier 1 static > lengthy </identifier>
+<symbol> / </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > factor </identifier>
+<symbol> = </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<symbol> ~ </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > lengthx </identifier>
+<symbol> &lt; </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> &amp; </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> = </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> | </symbol>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > lengthx </identifier>
+<symbol> &lt; </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> &amp; </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > bouncingDirection </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<symbol> - </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > factor </identifier>
+<symbol> = </symbol>
+<integerConstant> 20 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > factor </identifier>
+<symbol> = </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> = </symbol>
+<integerConstant> 506 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newy </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > divLengthy </identifier>
+<symbol> * </symbol>
+<symbol> ( </symbol>
+<symbol> - </symbol>
+<integerConstant> 50 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> / </symbol>
+<identifier 1 static > divLengthx </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newy </identifier>
+<symbol> = </symbol>
+<identifier 1 static > y </identifier>
+<symbol> + </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > newy </identifier>
+<symbol> * </symbol>
+<identifier 1 static > factor </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newy </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > divLengthy </identifier>
+<symbol> * </symbol>
+<integerConstant> 50 </integerConstant>
+<symbol> ) </symbol>
+<symbol> / </symbol>
+<identifier 1 static > divLengthx </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newy </identifier>
+<symbol> = </symbol>
+<identifier 1 static > y </identifier>
+<symbol> + </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > newy </identifier>
+<symbol> * </symbol>
+<identifier 1 static > factor </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > wall </identifier>
+<symbol> = </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newy </identifier>
+<symbol> = </symbol>
+<integerConstant> 250 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > divLengthx </identifier>
+<symbol> * </symbol>
+<symbol> ( </symbol>
+<symbol> - </symbol>
+<integerConstant> 25 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> / </symbol>
+<identifier 1 static > divLengthy </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> = </symbol>
+<identifier 1 static > x </identifier>
+<symbol> + </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > newx </identifier>
+<symbol> * </symbol>
+<identifier 1 static > factor </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newy </identifier>
+<symbol> = </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> = </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > divLengthx </identifier>
+<symbol> * </symbol>
+<integerConstant> 25 </integerConstant>
+<symbol> ) </symbol>
+<symbol> / </symbol>
+<identifier 1 static > divLengthy </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > newx </identifier>
+<symbol> = </symbol>
+<identifier 1 static > x </identifier>
+<symbol> + </symbol>
+<symbol> ( </symbol>
+<identifier 1 static > newx </identifier>
+<symbol> * </symbol>
+<identifier 1 static > factor </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<keyword> do </keyword>
+<identifier 1 static > setDestination </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > newx </identifier>
+<symbol> , </symbol>
+<identifier 1 static > newy </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+</tokens>

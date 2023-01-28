@@ -1,0 +1,414 @@
+<tokens>
+<keyword> class </keyword>
+<identifier 1 static > Main </identifier>
+<symbol> { </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > main </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<identifier 1 static > Array </identifier>
+<identifier 1 static > a </identifier>
+<symbol> , </symbol>
+<identifier 1 static > b </identifier>
+<symbol> , </symbol>
+<identifier 1 static > c </identifier>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Array </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > b </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Array </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> = </symbol>
+<identifier 1 static > Array </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<integerConstant> 8 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<integerConstant> 4 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> + </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ] </symbol>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ] </symbol>
+<symbol> * </symbol>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<symbol> ( </symbol>
+<symbol> ( </symbol>
+<integerConstant> 7 </integerConstant>
+<symbol> - </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ) </symbol>
+<symbol> - </symbol>
+<identifier 1 static > Main </identifier>
+<symbol> . </symbol>
+<identifier 1 static > double </identifier>
+<symbol> ( </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ) </symbol>
+<symbol> + </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> [ </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<keyword> null </keyword>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> = </symbol>
+<identifier 1 static > c </identifier>
+<symbol> [ </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Test 1: expected result: 5; actual result:  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Test 2: expected result: 40; actual result:  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 5 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Test 3: expected result: 0; actual result:  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > c </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> = </symbol>
+<keyword> null </keyword>
+<symbol> ; </symbol>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > c </identifier>
+<symbol> = </symbol>
+<keyword> null </keyword>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Main </identifier>
+<symbol> . </symbol>
+<identifier 1 static > fill </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > a </identifier>
+<symbol> , </symbol>
+<integerConstant> 10 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> = </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<integerConstant> 33 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> = </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 7 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > c </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<integerConstant> 77 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > b </identifier>
+<symbol> = </symbol>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> + </symbol>
+<identifier 1 static > c </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Test 4: expected result: 77; actual result:  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > c </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printString </identifier>
+<symbol> ( </symbol>
+<stringConstant> Test 5: expected result: 110; actual result:  </stringConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > printInt </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > b </identifier>
+<symbol> [ </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ] </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> do </keyword>
+<identifier 1 static > Output </identifier>
+<symbol> . </symbol>
+<identifier 1 static > println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<keyword> int </keyword>
+<identifier 1 static > double </identifier>
+<symbol> ( </symbol>
+<keyword> int </keyword>
+<identifier 1 static > a </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> return </keyword>
+<identifier 1 static > a </identifier>
+<symbol> * </symbol>
+<integerConstant> 2 </integerConstant>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier 1 static > fill </identifier>
+<symbol> ( </symbol>
+<identifier 1 static > Array </identifier>
+<identifier 1 static > a </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier 1 static > size </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<identifier 1 static > size </identifier>
+<symbol> &gt; </symbol>
+<integerConstant> 0 </integerConstant>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<keyword> let </keyword>
+<identifier 1 static > size </identifier>
+<symbol> = </symbol>
+<identifier 1 static > size </identifier>
+<symbol> - </symbol>
+<integerConstant> 1 </integerConstant>
+<symbol> ; </symbol>
+<keyword> let </keyword>
+<identifier 1 static > a </identifier>
+<symbol> [ </symbol>
+<identifier 1 static > size </identifier>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<identifier 1 static > Array </identifier>
+<symbol> . </symbol>
+<identifier 1 static > new </identifier>
+<symbol> ( </symbol>
+<integerConstant> 3 </integerConstant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+</tokens>
